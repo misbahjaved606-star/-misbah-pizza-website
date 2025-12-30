@@ -1,0 +1,73 @@
+<!-- ===================== index.html ===================== -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pizza Delight</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Pizza Delight</h1>
+    <nav>
+      <a href="#menu">Menu</a>
+      <a href="#cart">Cart</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h2>Fresh & Hot Pizza Delivered Fast 🍕</h2>
+  </div>
+
+  <section id="menu">
+    <h2>Our Menu</h2>
+    <div class="menu">
+      <div class="pizza-card">
+        <img src="margherita.jpg" alt="Margherita" />
+        <h3>Margherita</h3>
+        <p>$8</p>
+        <button onclick="addToCart('Margherita', 8)">Add to Cart</button>
+      </div>
+
+      <div class="pizza-card">
+        <img src="pepperoni.jpg" alt="Pepperoni" />
+        <h3>Pepperoni</h3>
+        <p>$10</p>
+        <button onclick="addToCart('Pepperoni', 10)">Add to Cart</button>
+      </div>
+
+      <div class="pizza-card">
+        <img src="vaggie.jpg" alt="Veggie" />
+        <h3>Veggie</h3>
+        <p>$9</p>
+        <button onclick="addToCart('Veggie', 9)">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="cart">
+    <h2>Your Cart</h2>
+    <div class="cart">
+      <ul id="cart-items"></ul>
+      <h3>Total: $<span id="total">0</span></h3>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: misbahjaved606@gmail.com</p>
+    <p>Phone: 03408575542</p>
+  </section>
+
+  <footer>
+    <p>© 2025 misbah shop Pizza Delight. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
